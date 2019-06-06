@@ -1,0 +1,14 @@
+@import "./mixins/media-query";
+
+@each $name, $breakpoint in $breakpoints {
+  @include media-up(#{$breakpoint}) {
+    @for $i from 1 through 12 {
+      .col-#{$name}-#{$i} {
+        width: #{100 * $i / 12}%!important;
+      }
+      .col-offset-#{$name}-#{$i} {
+        margin-left: #{100 * $i / 12}%!important;
+      }
+    }
+  }
+}

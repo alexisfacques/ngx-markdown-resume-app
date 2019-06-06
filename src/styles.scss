@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app.config";
+
+@import "./styles/columns";
+@import "./styles/text";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+::before, ::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: auto;
+
+  width: 21cm;
+  height: 29.7cm;
+
+  border: 1px solid black;
+}

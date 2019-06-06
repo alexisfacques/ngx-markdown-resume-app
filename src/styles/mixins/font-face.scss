@@ -1,0 +1,12 @@
+@import "./_variables";
+
+@mixin font-face($fontName, $type, $weight, $style) {
+  $font-full-path: '#{$font-path}/#{$fontName}/#{$fontName}-#{$type}';
+  @font-face {
+    text-rendering: optimizeLegibility;
+    font-family: '#{$fontName}';
+    font-weight: $weight;
+    font-style: $style;
+    src: url('#{$font-full-path}.ttf') format('truetype');
+  }
+}

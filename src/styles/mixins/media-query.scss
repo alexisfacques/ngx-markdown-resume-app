@@ -1,0 +1,43 @@
+$mobile_s: 320px;
+$mobile_m: 375px;
+$mobile_l: 425px;
+$mobile_xl: 576px;
+$sm: 768px;
+$tablet: 768px;
+$md: 992px;
+$laptop: 1024px;
+$lg: 1200px;
+$laptop_l: 1440px;
+$hd: 2560px;
+
+$breakpoints: (
+  mobile_s: $mobile_s,
+  mobile_m: $mobile_m,
+  mobile_l: $mobile_l,
+  mobile_xl: $mobile_xl,
+  sm: $sm,
+  tablet: $tablet,
+  md: $md,
+  laptop: $laptop,
+  lg: $lg,
+  laptop_l: $laptop_l,
+  hd: $hd
+);
+
+@mixin media-up($size) {
+  @media screen and (min-width: $size){
+    @content;
+  }
+}
+
+@mixin media-down($size) {
+  @media screen and (max-width: $size){
+    @content;
+  }
+}
+
+@mixin media-orientation($orientation) {
+  @media all and (orientation: $orientation) {
+    @content;
+  }
+}

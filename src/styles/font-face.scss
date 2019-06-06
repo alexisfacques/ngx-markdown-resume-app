@@ -1,0 +1,20 @@
+@import "mixins/font-face";
+
+@include font-face('Lato','HairLine',100,normal);
+@include font-face('Lato','Thin',200,normal);
+@include font-face('Lato','Light',300,normal);
+@include font-face('Lato','Regular',400,normal);
+@include font-face('Lato','Medium',500,normal);
+@include font-face('Lato','Semibold',600,normal);
+@include font-face('Lato','Bold',700,normal);
+@include font-face('Lato','Heavy',800,normal);
+@include font-face('Lato','Black',900,normal);
+
+@include font-face('LeagueGothic','Thin',200,normal);
+@include font-face('LeagueGothic','Regular',400,normal);
+
+@include font-face('OpenSans','Light',300,normal);
+@include font-face('OpenSans','Regular',400,normal);
+@include font-face('OpenSans','SemiBold',600,normal);
+@include font-face('OpenSans','Bold',700,normal);
+@include font-face('OpenSans','ExtraBold',800,normal);
