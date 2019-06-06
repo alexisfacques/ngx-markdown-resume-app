@@ -11,7 +11,7 @@ $sec: #15A3CE;
 
   grid-template-columns:
     auto
-    32%;
+    33.5%;
 
   grid-template-rows:
     minmax(min-content, max-content)
@@ -34,7 +34,7 @@ $sec: #15A3CE;
     margin-bottom: .5cm;
 
     width: 100%;
-    min-height: 100px;
+    min-height: 2.25cm;
   }
 
   .footer {
@@ -85,9 +85,9 @@ $sec: #15A3CE;
   .header .heading {
     color: #FFF;
     position: absolute;
-    font-size: 690%;
+    font-size: 625%;
     letter-spacing: 1px;
-    transform: translate(17px,35px);
+    transform: translate(10px,30px);
     bottom: 0;
     left: 0;
   }
@@ -161,7 +161,7 @@ $sec: #15A3CE;
 }
 
 :host ::ng-deep .block ul li {
-  margin: 0 0 .35cm;
+  margin: 0 0 .25cm;
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -169,7 +169,7 @@ $sec: #15A3CE;
   ul li ul li {
     position: relative;
 
-    margin: .25cm 0;
+    margin: .10cm 0;
     padding-top: 0px;
     padding-left: 0.6cm;
 
